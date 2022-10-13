@@ -1,6 +1,6 @@
 ---
 title: "Computer Vision System for Automated Medicinal Plant Identification"
-subtitle: "NUMBAT TALK 2022"
+subtitle: "NUMBATs' TALK"
 author: "Jayani P.G. Lakshika"
 institute: "Monash University, Australia"
 date: "October 14, 2022"
@@ -15,6 +15,7 @@ output:
 ---
 ```{r setup, include=FALSE}
 options(htmltools.preserve.raw = FALSE)
+options(error=recover)
 ```
 
 ```{r,comment=NA, message=FALSE, warning=FALSE, echo=FALSE}
@@ -506,76 +507,13 @@ knitr::include_graphics("ycmr.png")
 ---
 # Other talks 
 
-1) Estadistica 2021 – the Annual Statistics Day organized by the Statistics Society of University of Sri Jayewardenepura, Sri Lanka (2021)
+1) **Estadistica 2021** – the Annual Statistics Day organized by the Statistics Society of University of Sri Jayewardenepura, Sri Lanka
 
-2) Vx Tech Talk 2021, Vizuamatix Pvt. Ltd, Sri lanka (2021) 
----
-class: center, middle
-# Thanks!
+```{r, echo=FALSE, out.width="40%", fig.align='center'}
+knitr::include_graphics("edistica_talk.png")
+```
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
-
-Slides are available at github: https://github.com/JayaniLakshika/NIFS_YCMR_Speed_Talk_2021
-
-https://jayanilakshika.netlify.app/
-
----
-
-class: center, middle
-
-<img src="scr.png" style="width: 100%"/>
-
- The website "AYURVEDIC MEDICINAL PLANTS OF SRI LANKA" (\url(http://www.instituteofayurveda.org/plants/))
-
-
----
-# Robust scaling
-
-- If there are input variables that have very large values relative to the other input variables, these large values can dominate or skew some machine learning algorithms (eg: ANN, KNN, SVM etc).
-
-- The result is that algorithm pay more attention to the large values and ignore the variables with smaller values. 
-
-
----
-
-![](sca.png)
-
----
-Flavia hierarchy
-
-![](hie.png)
-
----
-
-## Synthetic Minority Oversampling Technique (SMOTE)
-
-- Imbalance dataset is a classification problem where the class distribution is biased or skewed or not uniform. Most machine learning algorithms for classification are designed under the assumption that each class has an equal number of observations. That results, especially for the minority class in the model, has poor predictive performance. Even though minority class is more important, classification errors for minority class is more sensitive than majority class.
-
-- One remedy for class imbalance is to use an over-sampling method. SMOTE is an over-sampling method which creates synthetic (not duplicates) samples for the minority class and makes the minority class equal to the majority class. By selecting similar records and altering that record one column at a time by random amount within the difference to the neighbouring records, SMOTE handles the imbalance problem.
-
----
-class: inverse, center, middle
-
-# Key Insights
-![](leafim.png)
-
----
-
-
-
-- Most of the research are based on existing databases. Even though researchers used their own database most of the time they didn't define image acquisition process in detail or it was complex. Therefore through this research, we introduced simplest and reliable approach of acquiring leaf images which can be followed without expertise knowledge. 
-
---
-
-- To classify leaf images, several reliable automatic procedures are used. But we introduced a hierarchical approach which perform better than non hierarchical approaches. 
-
---
-- Random Forest in hierarchical approach
-
---
-- We have to use training/test from same dataset to get accurate results.  
-
-
+2) **Vx Tech Talk 2021**, Vizuamatix Pvt. Ltd, Sri lanka
 
 ---
 
@@ -592,4 +530,27 @@ class: inverse, center, middle
 --
 - Develop an algorithm to handle images with heterogeneous backgrounds
 
+---
+class: center, middle
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+.pull-right[.pull-down[
+
+<a href="https://jayanilakshika.netlify.app/">
+.white[`r icons::fontawesome("link")` https://jayanilakshika.netlify.app/]
+</a>
+
+<a href="https://twitter.com/home">
+.white[`r icons::fontawesome("twitter")` @LakshikaJayani]
+</a>
+
+<a href="https://github.com/JayaniLakshika">
+.white[`r icons::fontawesome("github")` @JayaniLakshika]
+</a>
+
+<br><br><br>
+
+]]
 
